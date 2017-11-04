@@ -1,0 +1,3 @@
+# Das ist ein kommentar
+example.header=Ein einfaches sprachsystem für Unity3D
+example.time=Die Zeit ist jetzt <color="green">{0}</color> und alles ist fantastisch!

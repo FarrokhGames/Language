@@ -1,0 +1,4 @@
+# This is a comment
+example.header=A simple language system for Unity3D
+example.time=The time is currently <color="green">{0}</color>, and everything is awesome!
+example.fallbackonly=This text is only available in english
