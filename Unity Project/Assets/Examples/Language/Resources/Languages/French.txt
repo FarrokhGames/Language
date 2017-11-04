@@ -1,0 +1,3 @@
+# Ceci est un commentaire
+example.header=Un système de langage simple pour Unity3D
+example.time=Il est maintenant <color="green">{0}</color> et tout est incroyable!
