@@ -159,5 +159,15 @@ namespace FarrokhGames.Language
             manager.CurrentLanguage = SystemLanguage.Swedish;
             Assert.That(manager.Get("test4", "test"), Is.EqualTo("English only text with parameter test"));
         }
+
+
+        [Test]
+        public void FallbackOnly_OrCurrentLanguageMissing_WorksAsIntended()
+        {
+            var manager = new LanguageManager(GetEnglish());
+            Assert.That(manager.Contains("test1"), Is.True);
+            Assert.That(manager.Get("test1"), Is.EqualTo("Short text"));
+            Assert.That(manager.Get("test2", "good looking"), Is.EqualTo("Text with one good looking parameter."));
+        }
     }
 }
