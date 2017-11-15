@@ -79,7 +79,7 @@ namespace FarrokhGames.Language
         /// <param name="id">Identifier</param>
         public bool Contains(string id)
         {
-            if (_containers[_currentLanguage].Contains(id))
+            if (_containers[CurrentLanguage].Contains(id))
             {
                 return true;
             }
@@ -93,9 +93,9 @@ namespace FarrokhGames.Language
         /// <returns>Localized string</returns>
         public string Get(string id)
         {
-            if (_containers[_currentLanguage].Contains(id))
+            if (_containers[CurrentLanguage].Contains(id))
             {
-                return _containers[_currentLanguage].Get(id);
+                return _containers[CurrentLanguage].Get(id);
             }
             return _fallbackLanguage.Get(id);
         }
@@ -108,9 +108,9 @@ namespace FarrokhGames.Language
         /// <returns>Localized string</returns>
         public string Get(string id, params object[] parameters)
         {
-            if (_containers[_currentLanguage].Contains(id))
+            if (_containers[CurrentLanguage].Contains(id))
             {
-                return _containers[_currentLanguage].Get(id, parameters);
+                return _containers[CurrentLanguage].Get(id, parameters);
             }
             return _fallbackLanguage.Get(id, parameters);
         }
